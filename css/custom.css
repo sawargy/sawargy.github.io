@@ -408,36 +408,46 @@ footer {
 
 /* FEATURES/SERVICES
 -------------------------------------------------- */
+
 .icon-boxes {
-  margin-top: 100px;
+  padding-bottom: 60px;
+}
+
+@media (min-width: 1200px) {
+  .icon-boxes:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(50% + 20px);
+    background-color: #fff;
+  }
 }
 
 .icon-box {
-  padding: 50px 30px;
+  padding: 60px 30px;
   position: relative;
   overflow: hidden;
-  background: #fff;
-  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  background: #008d7d;
+  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
+  height: 100%;
+  width: 100%;
+  text-align: center;
 }
 
 .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 18px;
+  font-size: 24px;
 }
 
 .icon-box .title a {
-  color: #124265;
+  color: #fff;
   transition: 0.3s;
-}
-
-.icon-box .description {
-  font-size: 15px;
-  line-height: 28px;
-  margin-bottom: 0;
 }
 
 .icon-box .icon {
@@ -445,17 +455,18 @@ footer {
   padding-top: 10px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  font-size: 36px;
+  font-size: 48px;
   line-height: 1;
-  color: #2487ce;
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .icon-box:hover {
-  transform: scale(1.08);
+  background: #009786;
 }
 
-.icon-box:hover .title a {
-  color: #2487ce;
+.icon-box:hover .title a,
+.icon-box:hover .icon {
+  color: #fff;
 }
 
 
@@ -488,79 +499,179 @@ footer {
   color: #1e6ca6;
 }
 
-/* TEAM MEMBER
+/*--------------------------------------------------------------
+# Our Team Section
 --------------------------------------------------------------*/
 .team .member {
-  margin-bottom: 20px;
-  overflow: hidden;
   text-align: center;
-  border-radius: 4px;
   background: #fff;
-  box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
+  border-radius: 10px;
+  padding: 15px;
+  overflow: hidden;
+  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
-.team .member .member-img {
-  position: relative;
+.team .member img {
+  border-radius: 10px;
   overflow: hidden;
+}
+
+.team .member .member-content {
+  padding: 0 20px 30px 20px;
+}
+
+.team .member h4 {
+  font-weight: 700;
+  margin-top: 16px;
+  margin-bottom: 2px;
+  font-size: 20px;
+}
+
+.team .member span {
+  font-style: italic;
+  display: block;
+  font-size: 14px;
+  color: #6c757d;
+}
+
+.team .member p {
+  padding-top: 10px;
+  font-size: 14px;
+  font-style: italic;
+  color: #6c757d;
 }
 
 .team .member .social {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  height: 40px;
-  opacity: 0;
-  transition: ease-in-out 0.3s;
-  text-align: center;
-  background: rgba(255, 255, 255, 0.85);
-  display: inline-flex;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .team .member .social a {
-  transition: color 0.3s;
-  color: #124265;
-  margin: 0 10px;
-  display: inline-block;
+  color: #a2a2a2;
+  transition: 0.3s;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbbbb;
 }
 
 .team .member .social a:hover {
-  color: #2487ce;
+  color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .team .member .social i {
   font-size: 18px;
   margin: 0 2px;
+}
+
+
+
+/*--------------------------------------------------------------
+# Testimonials Section
+--------------------------------------------------------------*/
+.testimonials .testimonial-wrap {
+  padding-left: 10px;
+}
+
+.testimonials .testimonial-item {
+  box-sizing: content-box;
+  padding: 30px;
+  margin: 30px 10px;
+  box-shadow: 0px 0 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.testimonials .testimonial-item .testimonial-img {
+  width: 90px;
+  border-radius: 50px;
+  margin-right: 15px;
+}
+
+.testimonials .testimonial-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #000;
+}
+
+.testimonials .testimonial-item h4 {
+  font-size: 14px;
+  color: #999;
+  margin: 0;
+}
+
+.testimonials .testimonial-item .stars {
+  margin: 10px 0;
+}
+
+.testimonials .testimonial-item .stars i {
+  color: #ffc107;
+  margin: 0 1px;
+}
+
+.testimonials .testimonial-item .quote-icon-left,
+.testimonials .testimonial-item .quote-icon-right {
+  color: #009d8b;
+  font-size: 26px;
   line-height: 0;
 }
 
-.team .member .member-info {
-  padding: 25px 15px;
+.testimonials .testimonial-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
 }
 
-.team .member .member-info h4 {
-  font-weight: 700;
-  margin-bottom: 5px;
-  font-size: 18px;
-  color: #124265;
+.testimonials .testimonial-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+  transform: scale(-1, -1);
 }
 
-.team .member .member-info span {
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-  color: #aaaaaa;
-}
-
-.team .member .member-info p {
+.testimonials .testimonial-item p {
   font-style: italic;
-  font-size: 14px;
-  line-height: 26px;
-  color: #777777;
+  margin: 15px auto 15px auto;
 }
 
-.team .member:hover .social {
+.testimonials .swiper-pagination {
+  margin-top: 20px;
+  position: relative;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
+}
+
+.testimonials .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--color-primary);
+}
+
+@media (max-width: 767px) {
+  .testimonials .testimonial-wrap {
+    padding-left: 0;
+  }
+
+  .testimonials .testimonial-item {
+    padding: 30px;
+    margin: 15px;
+  }
+
+  .testimonials .testimonial-item .testimonial-img {
+    position: static;
+    left: auto;
+  }
 }
