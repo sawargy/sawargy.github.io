@@ -1,0 +1,405 @@
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(fonts/PlusJakartaSans-Regular.woff);
+  font-weight: 400;
+}
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(fonts/PlusJakartaSans-Italic.woff);
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(fonts/PlusJakartaSans-Bold.woff);
+  font-weight: bold;
+  font-weight: 700;
+}
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(fonts/PlusJakartaSans-BoldItalic.woff);
+  font-weight: bold;
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(fonts/PlusJakartaSans-ExtraBold.woff);
+  font-weight: 800;
+}
+@font-face {
+  font-family: PlusJakartaSans;
+  src: url(fonts/PlusJakartaSans-ExtraBoldItalic.woff);
+  font-weight: 800;
+  font-style: italic;
+}
+::selection {
+  color: #14171f;
+  background: #f9d941;
+}
+body {
+  color: #e0e3eb;
+  background: #14171f;
+  font-family: "PlusJakartaSans";
+  background-image: url("pattern2.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 1200px;
+  font-weight: 400;
+  font-size: 16px;
+}
+p {
+  color: #c2c8d6;
+}
+a {
+  color: #f9d941;
+}
+a:hover {
+  color: #f8d012;
+}
+a:active {
+  color: #cfac07;
+}
+.h1 {
+  font-weight: 800;
+}
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+.h2 a,
+.h3 a,
+.h4 a,
+.h5 a,
+.h6 a,
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+  text-decoration: none;
+}
+
+.bg-dark {
+  background-color: #1f232e !important;
+}
+
+section {
+  margin-top: 2.5rem;
+  padding: 2.5rem 0;
+}
+.hero {
+  padding-top: 7.5rem;
+  padding-bottom: 1rem;
+}
+.hero p a {
+  color: #e0e3eb;
+}
+.hero p a:hover {
+  color: #f8d012;
+}
+.lead {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #f9d941;
+}
+footer {
+  background: #1f232e;
+  padding: 2.5rem 0;
+}
+#cta {
+  background: #1f232e;
+  padding-top: 5rem;
+}
+#testi img {
+  filter: grayscale(100%);
+}
+#testi {
+  background: #0f0e0a;
+}
+.tools img {
+  filter: grayscale(0%);
+  height: 80px;
+}
+.tools p {
+  margin-top: 2rem;
+}
+
+/* BUTTON
+-------------------------------------------------- */
+.btn {
+  padding: 0.5rem 1rem;
+  color: #212529;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  border: 2px solid;
+}
+.btn:hover {
+  color: #212529;
+}
+.btn-check:focus + .btn,
+.btn:focus {
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.25);
+}
+
+.btn-primary {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-primary:hover {
+  color: #14171f;
+  background-color: #f8d012;
+  border-color: #cfac07;
+}
+.btn-check:focus + .btn-primary,
+.btn-primary:focus {
+  color: #14171f;
+  background-color: #f8d012;
+  border-color: #cfac07;
+  box-shadow: 0 0 0 0.25rem rgba(250, 225, 107, 0.5);
+}
+.btn-check:checked + .btn-primary,
+.btn-check:active + .btn-primary,
+.btn-primary:active,
+.btn-primary.active,
+.show > .btn-primary.dropdown-toggle {
+  color: #14171f;
+  background-color: #cfac07;
+  border-color: #9e8305;
+}
+.btn-check:checked + .btn-primary:focus,
+.btn-check:active + .btn-primary:focus,
+.btn-primary:active:focus,
+.btn-primary.active:focus,
+.show > .btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.25rem rgba(250, 225, 107, 0.5);
+}
+
+.btn-outline-primary {
+  color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-outline-primary:hover {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:focus + .btn-outline-primary,
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-check:checked + .btn-outline-primary,
+.btn-check:active + .btn-outline-primary,
+.btn-outline-primary:active,
+.btn-outline-primary.active,
+.btn-outline-primary.dropdown-toggle.show {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:checked + .btn-outline-primary:focus,
+.btn-check:active + .btn-outline-primary:focus,
+.btn-outline-primary:active:focus,
+.btn-outline-primary.active:focus,
+.btn-outline-primary.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-outline-primary:disabled,
+.btn-outline-primary.disabled {
+  color: #f9d941;
+  background-color: transparent;
+}
+
+.icon-wrapper {
+  display: inline-block;
+}
+#btn-icon {
+  padding: 1rem;
+  width: 58px;
+  height: 58px;
+  margin: 0 10px;
+  margin-bottom: 10px;
+}
+
+.btn-icon {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  color: #f9d941;
+  border-color: transparent;
+}
+.btn-icon:hover {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:focus + .btn-icon,
+.btn-icon:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-check:checked + .btn-icon,
+.btn-check:active + .btn-icon,
+.btn-icon:active,
+.btn-icon.active,
+.btn-icon.dropdown-toggle.show {
+  color: #14171f;
+  background-color: #f9d941;
+  border-color: #f9d941;
+}
+.btn-check:checked + .btn-icon:focus,
+.btn-check:active + .btn-icon:focus,
+.btn-icon:active:focus,
+.btn-icon.active:focus,
+.btn-icon.dropdown-toggle.show:focus {
+  box-shadow: 0 0 0 0.25rem rgba(249, 217, 65, 0.5);
+}
+.btn-icon:disabled,
+.btn-icon.disabled {
+  color: #f9d941;
+  background-color: transparent;
+}
+
+/* NAVBAR
+-------------------------------------------------- */
+.nav-link {
+  font-weight: bold;
+}
+.navbar-brand-logo {
+  font-weight: 800;
+  font-size: 2rem;
+  color: #f9d941;
+}
+.navbar-dark .navbar-brand {
+  color: #e0e3eb;
+}
+
+.navbar-dark .navbar-brand:hover,
+.navbar-dark .navbar-brand:focus {
+  color: #e0e3eb;
+}
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.55);
+}
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link:focus {
+  color: rgba(255, 255, 255, 0.75);
+}
+.navbar-dark .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.25);
+}
+.navbar-dark .navbar-nav .show > .nav-link,
+.navbar-dark .navbar-nav .nav-link.active {
+  color: #e0e3eb;
+}
+.navbar-dark .navbar-toggler {
+  color: rgba(255, 255, 255, 0.55);
+  border-color: rgba(255, 255, 255, 0.1);
+  padding: 0.25rem 0.5rem;
+}
+.navbar-dark .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-dark .navbar-text {
+  color: rgba(255, 255, 255, 0.55);
+}
+.navbar-dark .navbar-text a,
+.navbar-dark .navbar-text a:hover,
+.navbar-dark .navbar-text a:focus {
+  color: #e0e3eb;
+}
+
+/* CARD
+-------------------------------------------------- */
+.card {
+  border: 0px solid;
+  border-radius: 1rem;
+}
+.card-img,
+.card-img-top {
+  border-radius: 1rem;
+}
+.card-body {
+  padding: 0px;
+}
+
+/* CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+  color: #e0e3eb;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 16rem;
+  background-color: transparent;
+}
+@media only screen and (max-width: 768px) {
+  .carousel-item {
+    height: 23rem; /* Default 22rem */
+  }
+}
+@media only screen and (max-width: 576px) {
+  .carousel-item {
+    height: 27rem; /* Default 24rem */
+  }
+}
+@media only screen and (max-width: 375px) {
+  .carousel-item {
+    height: 30rem; /* Default 26rem */
+  }
+}
+.carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 32rem;
+}
+
+/* CONTENT
+-------------------------------------------------- */
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: 400;
+}
+/* rtl:begin:ignore */
+.marketing .col-lg-4 p {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+}
+/* rtl:end:ignore */
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+}
+
+/* Thin out the marketing headings */
+.featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  /* rtl:remove */
+  letter-spacing: -0.05rem;
+}
