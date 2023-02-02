@@ -41,7 +41,6 @@ body {
   color: #e0e3eb;
   background: #14171f;
   font-family: "PlusJakartaSans";
-  background-image: url("pattern2.svg");
   background-repeat: no-repeat;
   background-position: top center;
   background-size: 1200px;
@@ -408,46 +407,36 @@ footer {
 
 /* FEATURES/SERVICES
 -------------------------------------------------- */
-
 .icon-boxes {
-  padding-bottom: 60px;
-}
-
-@media (min-width: 1200px) {
-  .icon-boxes:before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: calc(50% + 20px);
-    background-color: #fff;
-  }
+  margin-top: 100px;
 }
 
 .icon-box {
-  padding: 60px 30px;
+  padding: 50px 30px;
   position: relative;
   overflow: hidden;
-  background: #008d7d;
-  box-shadow: 0 0 29px 0 rgba(0, 0, 0, 0.08);
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
   transition: all 0.3s ease-in-out;
   border-radius: 8px;
   z-index: 1;
-  height: 100%;
-  width: 100%;
-  text-align: center;
 }
 
 .icon-box .title {
   font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
+  font-size: 18px;
 }
 
 .icon-box .title a {
-  color: #fff;
+  color: #124265;
   transition: 0.3s;
+}
+
+.icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
 .icon-box .icon {
@@ -455,20 +444,18 @@ footer {
   padding-top: 10px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  font-size: 48px;
+  font-size: 36px;
   line-height: 1;
-  color: rgba(255, 255, 255, 0.6);
+  color: #2487ce;
 }
 
 .icon-box:hover {
-  background: #009786;
+  transform: scale(1.08);
 }
 
-.icon-box:hover .title a,
-.icon-box:hover .icon {
-  color: #fff;
+.icon-box:hover .title a {
+  color: #2487ce;
 }
-
 
 /* COUNTS
 -------------------------------------------------- */
