@@ -319,6 +319,7 @@ footer {
   color: #e0e3eb;
 }
 
+
 /* CARD
 -------------------------------------------------- */
 .card {
@@ -402,4 +403,87 @@ footer {
   line-height: 1;
   /* rtl:remove */
   letter-spacing: -0.05rem;
+}
+
+
+/* FEATURES/SERVICES
+-------------------------------------------------- */
+.icon-boxes {
+  margin-top: 100px;
+}
+
+.icon-box {
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: 0 0 29px 0 rgba(18, 66, 101, 0.08);
+  transition: all 0.3s ease-in-out;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.icon-box .title {
+  font-weight: 700;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.icon-box .title a {
+  color: #124265;
+  transition: 0.3s;
+}
+
+.icon-box .description {
+  font-size: 15px;
+  line-height: 28px;
+  margin-bottom: 0;
+}
+
+.icon-box .icon {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  font-size: 36px;
+  line-height: 1;
+  color: #2487ce;
+}
+
+.icon-box:hover {
+  transform: scale(1.08);
+}
+
+.icon-box:hover .title a {
+  color: #2487ce;
+}
+
+
+/* COUNTS
+-------------------------------------------------- */
+.counts {
+  padding: 60px 0;
+}
+
+.counts .count-box {
+  width: 100%;
+  text-align: center;
+}
+
+.counts .count-box span {
+  font-size: 48px;
+  line-height: 48px;
+  display: block;
+  font-weight: 700;
+  color: #124265;
+  margin-left: 80px;
+  margin: auto;
+}
+
+.counts .count-box p {
+  padding: 8px 0 0 0;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1e6ca6;
 }
