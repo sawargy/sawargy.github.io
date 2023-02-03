@@ -63,8 +63,8 @@ section {
   padding: 2.5rem 0;
 }
 .hero {
-  padding-top: 7.5rem;
-  padding-bottom: 1rem;
+  padding-top: 4rem;
+  margin-bottom: -8rem;
 }
 .hero p a {
   color: #e0e3eb;
@@ -245,7 +245,7 @@ footer {
 .navbar-brand-logo {
   font-weight: 800;
   font-size: 2rem;
-  color: #f9d941;
+  color: #e0e3eb;
 }
 .navbar-dark .navbar-brand {
   color: #e0e3eb;
