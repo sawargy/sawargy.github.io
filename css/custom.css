@@ -72,6 +72,9 @@ section {
 .hero p a:hover {
   color: #f8d012;
 }
+.heromargin{
+  margin-left:64px;
+}
 .lead {
   font-size: 1.25rem;
   font-weight: 700;
