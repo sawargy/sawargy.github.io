@@ -607,12 +607,12 @@ footer {
 .testimonials .swiper-pagination .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: white;
   opacity: 1;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: var(--color-primary);
+  background-color: yellow);
 }
 
 @media (max-width: 767px) {
