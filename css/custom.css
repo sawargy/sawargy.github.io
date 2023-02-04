@@ -612,7 +612,7 @@ footer {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: yellow;
+  background-color: black;
 }
 
 @media (max-width: 767px) {
