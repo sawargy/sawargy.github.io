@@ -95,11 +95,15 @@ footer {
   background: #0f0e0a;
 }
 .tools img {
-  filter: grayscale(0%);
+  filter: grayscale(100%);
   height: 80px;
 }
 .tools p {
   margin-top: 2rem;
+}
+
+.tools img:hover {
+  filter: grayscale(0%)
 }
 
 /* BUTTON
@@ -612,7 +616,7 @@ footer {
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: black;
+  background-color: yellow;
 }
 
 @media (max-width: 767px) {
