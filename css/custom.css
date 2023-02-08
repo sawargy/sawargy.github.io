@@ -26,11 +26,11 @@ a:active {
 }
 h1, .h1 {
   font-weight: 600;
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 @media (min-width: 1200px){
 h1, .h1 {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
 }
 }
 .h2,
@@ -59,7 +59,10 @@ h5 a,
 h6 a {
   text-decoration: none;
 }
-
+@media (min-width: 1400px){
+.container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
+    max-width: 1280px;}
+}
 .bg-dark {
   background-color: #1f232e !important;
 }
