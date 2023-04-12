@@ -38,6 +38,10 @@ h1,
   font-size: 3.75rem !important;
   font-family: "Barlow", sans-serif !important
 }
+h2,
+.h2 {
+  font-size: 2.25rem !important;
+}
 
 @media (min-width: 1200px) {
   h1,
@@ -122,13 +126,21 @@ section {
   background: #1f232e;
   padding-top: 5rem;
 }
+.tools{
+margin-top:96px;
+margin-bottom: 96px;
+}
 
 .tools p {
-  margin-top: 2rem;
 }
 
 .tools img:hover {
   filter: grayscale(0%);
+}
+
+footer h1{
+  font-weight: 400 !important;
+  font-size: 3rem;
 }
 
 /* BUTTON
@@ -136,7 +148,7 @@ section {
 .btn {
   padding: 0.625rem 1.125rem;
   color: #212529;
-  font-weight: bold;
+  font-weight: 600;
   border-radius: 0.5rem;
   border: 1px solid;
 }
@@ -151,6 +163,7 @@ section {
   background:#F9fafb;
   border: 1px solid #D0D5DD;
 }
+
 
 .btn:hover {
   color: #212529;
@@ -297,7 +310,7 @@ section {
 /* NAVBAR
 -------------------------------------------------- */
 .nav-link {
-  font-weight: bold;
+  font-weight: 600;
 }
 .navbar a:hover{
   text-decoration: none;
@@ -307,9 +320,15 @@ section {
   font-size: 2rem;
   color: #1f232e;
 }
+.nav-item a {
+  font-weight: 600 !important
+}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+  font-weight: 600 !important
+}
 
 .bg-light {
-  background: #fff;
+  background: #fff !important;
 }
 
 .navbar-dark .navbar-brand:hover,
@@ -510,7 +529,7 @@ section {
 /* COUNTS
 -------------------------------------------------- */
 .counts {
-  padding: 60px 0;
+  padding: 96px 0;
 }
 
 .counts .count-box {
@@ -519,37 +538,28 @@ section {
 }
 
 .counts .count-box span {
-  font-size: 48px;
-  line-height: 48px;
+  font-size: 3.75rem;
+  line-height: 3.75rem;
   display: block;
   font-weight: 700;
-  color: #124265;
   margin-left: 80px;
   margin: auto;
 }
 
 .counts .count-box p {
   padding: 8px 0 0 0;
-  font-family: "Raleway", sans-serif;
-  font-weight: 600;
-  font-size: 14px;
-  color: #1e6ca6;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 /*--------------------------------------------------------------
 # Our Team Section
 --------------------------------------------------------------*/
 .team .member {
-  text-align: center;
-  background: #fff;
-  border-radius: 10px;
-  padding: 15px;
   overflow: hidden;
-  box-shadow: 0px 2px 25px rgba(0, 0, 0, 0.1);
 }
 
 .team .member img {
-  border-radius: 10px;
   overflow: hidden;
 }
 
@@ -558,53 +568,45 @@ section {
 }
 
 .team .member h4 {
-  font-weight: 700;
-  margin-top: 16px;
+  font-weight: 600 !important;
+  margin-top: 24px;
   margin-bottom: 2px;
   font-size: 20px;
 }
 
 .team .member span {
-  font-style: italic;
   display: block;
-  font-size: 14px;
-  color: #6c757d;
+  font-size: 18px;
+  font-weight: 400 !important;
+  color: #4172C6;
+  font-style: italic;
 }
 
 .team .member p {
   padding-top: 10px;
-  font-size: 14px;
-  font-style: italic;
-  color: #6c757d;
+  font-size: 20px;
 }
 
 .team .member .social {
-  margin-top: 15px;
+  margin-top: 16px;
   margin-bottom: 10px;
   display: flex;
-  align-items: center;
-  justify-content: space-around;
+  justify-content: left;
 }
 
 .team .member .social a {
-  color: #a2a2a2;
+  color: #98A2B3;
   transition: 0.3s;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #bbbbbb;
+  width: 40px;
 }
 
 .team .member .social a:hover {
-  color: var(--color-primary);
-  border-color: var(--color-primary);
+  color: #4172C6;
 }
 
 .team .member .social i {
-  font-size: 18px;
+  font-size: 24px;
   margin: 0 2px;
 }
 
