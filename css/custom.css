@@ -20,10 +20,12 @@ p {
 
 a {
   color: #5684d9;
+  font-weight: 500 !important
 }
 
 a:hover {
   color: #4172c6;
+  text-decoration: none !important;
 }
 
 a:active {
@@ -32,16 +34,18 @@ a:active {
 
 h1,
 .h1 {
-  font-weight: 600;
-  font-size: 3.5rem;
+  font-weight: 600 !important;
+  font-size: 3.75rem !important;
+  font-family: "Barlow", sans-serif !important
 }
 
 @media (min-width: 1200px) {
   h1,
   .h1 {
-    font-size: 3.5rem;
+    font-size: 3.75rem;
   }
 }
+
 
 .h2,
 .h3,
@@ -54,7 +58,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600;
+  font-weight: 600 !important;
+  font-family: "Barlow", sans-serif !important
 }
 
 .h2 a,
@@ -129,11 +134,22 @@ section {
 /* BUTTON
 -------------------------------------------------- */
 .btn {
-  padding: 0.5rem 1rem;
+  padding: 0.625rem 1.125rem;
   color: #212529;
   font-weight: bold;
   border-radius: 0.5rem;
-  border: 2px solid;
+  border: 1px solid;
+}
+.btn-lg{
+  padding: 1rem 1.75rem;
+}
+.btn-outline-secondary{
+  background: white;
+  border: 1px solid #D0D5DD;
+}
+.btn-outline-secondary:hover{
+  background:#F9fafb;
+  border: 1px solid #D0D5DD;
 }
 
 .btn:hover {
@@ -283,7 +299,9 @@ section {
 .nav-link {
   font-weight: bold;
 }
-
+.navbar a:hover{
+  text-decoration: none;
+}
 .navbar-brand-logo {
   font-weight: 800;
   font-size: 2rem;
