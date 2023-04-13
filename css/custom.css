@@ -35,7 +35,6 @@ a:active {
 h1,
 .h1 {
   font-weight: 600 !important;
-  font-size: 3.75rem !important;
   font-family: "Barlow", sans-serif !important
 }
 h2,
@@ -46,7 +45,7 @@ h2,
 @media (min-width: 1200px) {
   h1,
   .h1 {
-    font-size: 3.75rem;
+    font-size: 3.75rem !important
   }
 }
 
@@ -105,9 +104,36 @@ section {
   padding-top: 8rem;
   padding-bottom: 4rem;
 }
+.hero img{
+  margin-bottom: 3rem;
+  width:100%;
+}
 
 .hero img .hero p a {
   color: #e0e3eb;
+}
+
+.hero p{
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.hero .btn{
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+  .hero img{
+   margin-bottom: 0px;
+   width:86%;
+  }
+  .hero p{
+   margin-bottom: 2rem;
+  }
+  .hero .btn{
+    margin-bottom: 0rem;
+  }
+  
 }
 
 .hero p a:hover {
