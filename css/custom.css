@@ -535,18 +535,24 @@ footer h1{
 }
 
 .icon-box {
-  padding: 50px 30px;
+  padding: 1.5rem;
   position: relative;
   overflow: hidden;
   background: #F9FAFB;
   transition: all 0.3s ease-in-out;
   z-index: 1;
+  margin-bottom: 1.5rem;
 }
 
+.icon-box p{
+margin: 0px;
+color: #667085;
+}
 .icon-box .title {
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
+  font-weight: 500 !important;
+  margin-top: 3rem;
+  margin-bottom: 0.5rem;
+  font-size: 20px;
 }
 
 .icon-box .title a {
@@ -555,14 +561,12 @@ footer h1{
 }
 
 .icon-box .description {
-  font-size: 15px;
-  line-height: 28px;
+  font-size: 16px;
+  line-height: 24px;
   margin-bottom: 0;
 }
 
 .icon-box .icon {
-  margin-bottom: 20px;
-  padding-top: 10px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
   font-size: 36px;
@@ -593,7 +597,7 @@ footer h1{
   font-size: 3.75rem;
   line-height: 3.75rem;
   display: block;
-  font-weight: 700;
+  font-weight: 600;
   margin-left: 80px;
   margin: auto;
 }
