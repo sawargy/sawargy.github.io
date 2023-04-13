@@ -717,12 +717,20 @@ color: #667085;
 .social {
   margin-top: 24px;
   display: flex;
-  justify-content: left;
 }
 
 footer .social {
   margin-top: 0;
+  justify-content: right;
 }
+
+@media (max-width: 576px) {
+  footer .social {
+    margin-top: 1.5rem;
+    justify-content: left;
+  }
+}
+
 
 .social a {
   color: #98A2B3;
