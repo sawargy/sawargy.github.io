@@ -14,6 +14,15 @@ body {
   font-size: 16px;
 }
 
+.container{
+  padding-right: var(--bs-gutter-x, 1rem);
+  padding-left: var(--bs-gutter-x, 1rem);
+}
+.row>*{
+  padding-right: calc(var(--bs-gutter-x) * .66);
+  padding-left: calc(var(--bs-gutter-x) * .66);
+}
+
 p {
   color: #667085;
 }
@@ -98,6 +107,17 @@ section {
   margin-top: 2.5rem;
   padding: 2.5rem 0;
 }
+
+.section-header{
+  margin-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .section-header{
+    margin-bottom: 3rem;
+  }
+}
+
 
 .hero {
   background: #f5f8ff;
