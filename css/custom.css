@@ -104,15 +104,21 @@ h6 a {
 }
 
 section {
-  margin-top: 2.5rem;
-  padding: 2.5rem 0;
+  padding: 6rem 0;
 }
 
 .section-header{
   margin-bottom: 4rem;
 }
 
+.section-header h2{
+  margin: 0px;
+}
+
 @media (max-width: 768px) {
+  section {
+    padding: 4rem 0;
+  }
   .section-header{
     margin-bottom: 3rem;
   }
@@ -150,10 +156,12 @@ section {
   .hero p{
    margin-bottom: 2rem;
   }
+}
+
+@media (min-width: 992px) {
   .hero .btn{
     margin-bottom: 0rem;
   }
-  
 }
 
 .hero p a:hover {
@@ -173,8 +181,6 @@ section {
   padding-top: 5rem;
 }
 .tools{
-margin-top:96px;
-margin-bottom: 96px;
 }
 
 .tools p {
@@ -525,12 +531,10 @@ footer h1{
 /* FEATURES/SERVICES
 -------------------------------------------------- */
 .icon-boxes {
-  margin-top: 48px;
 }
 
 @media (min-width: 767px) {
   .icon-boxes {
-    margin-top: 96px;
   }
 }
 
@@ -585,7 +589,19 @@ color: #667085;
 /* COUNTS
 -------------------------------------------------- */
 .counts {
-  padding: 96px 0;
+  padding:4rem 0;
+  border-top: 1px solid #EAECF0;
+  border-bottom: 1px solid #EAECF0;
+}
+
+@media (min-width: 768px) {
+  .counts {
+  }
+}
+@media (max-width: 992px) {
+  .counts .count-box {
+  margin-bottom: 4rem;
+  }
 }
 
 .counts .count-box {
@@ -595,7 +611,7 @@ color: #667085;
 
 .counts .count-box span {
   font-size: 3.75rem;
-  line-height: 3.75rem;
+  line-height: 4.5rem;
   display: block;
   font-weight: 600;
   margin-left: 80px;
@@ -603,8 +619,9 @@ color: #667085;
 }
 
 .counts .count-box p {
-  padding: 8px 0 0 0;
+  padding: 12px 0 0 0;
   font-weight: 500;
+  margin: 0;
   font-size: 18px;
 }
 
