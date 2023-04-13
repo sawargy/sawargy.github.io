@@ -29,7 +29,7 @@ p {
 
 a {
   color: #5684d9;
-  font-weight: 500 !important
+  font-weight: 500;
 }
 
 a:hover {
@@ -48,7 +48,6 @@ h1,
 }
 h2,
 .h2 {
-  font-size: 2.25rem !important;
 }
 
 @media (min-width: 1200px) {
@@ -70,7 +69,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 600 !important;
+  font-weight: 600;
   font-family: "Barlow", sans-serif !important
 }
 
@@ -112,7 +111,10 @@ section {
 }
 
 .section-header h2{
+  font-size: 2.25rem;
+  line-height: 2.75rem;
   margin: 0px;
+  font-weight: 600;
 }
 
 @media (max-width: 768px) {
@@ -121,6 +123,10 @@ section {
   }
   .section-header{
     margin-bottom: 3rem;
+  }
+  .section-header h2{
+    font-size: 1.875rem;
+    line-height: 2.375rem;
   }
 }
 
@@ -180,13 +186,13 @@ section {
   background: #1f232e;
   padding-top: 5rem;
 }
-.tools{
+.clients{
 }
 
-.tools p {
+.clients p {
 }
 
-.tools img:hover {
+.clients img:hover {
   filter: grayscale(0%);
 }
 
@@ -206,6 +212,7 @@ footer h1{
 }
 .btn-lg{
   padding: 1rem 1.75rem;
+  font-weight: 500;
 }
 .btn-outline-secondary{
   background: white;
@@ -589,13 +596,14 @@ color: #667085;
 /* COUNTS
 -------------------------------------------------- */
 .counts {
-  padding:4rem 0;
+  padding:4rem 0 0 0;
   border-top: 1px solid #EAECF0;
   border-bottom: 1px solid #EAECF0;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .counts {
+  padding:4rem 0;
   }
 }
 @media (max-width: 992px) {
@@ -845,8 +853,6 @@ color: #667085;
 }
 
 .portfolio .portfolio-wrap {
-  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
   height: 100%;
   overflow: hidden;
 }
@@ -858,22 +864,22 @@ color: #667085;
 }
 
 .portfolio .portfolio-wrap .portfolio-info {
-  padding: 25px 20px;
-  background-color: #fff;
+  padding: 2rem 0 0 0;
   position: relative;
-  border-top: 1px solid #f3f3f3;
   z-index: 2;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
-  font-size: 18px;
-  font-weight: 600;
-  padding-right: 50px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  margin: 0;
+  font-weight: 500;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a {
   color: var(--color-default);
   transition: 0.3s;
+  font-weight: 500;
 }
 
 .portfolio .portfolio-wrap .portfolio-info h4 a:hover {
