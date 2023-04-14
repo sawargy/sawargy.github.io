@@ -350,6 +350,7 @@ footer .btn-outline-secondary a{
 
 #btn-icon {
   padding: 1rem;
+  font-size: 1.5rem;
   width: 58px;
   height: 58px;
   margin: 0 10px;
@@ -717,6 +718,7 @@ color: #667085;
 .social {
   margin-top: 24px;
   display: flex;
+  font-size: 1.5rem;
 }
 
 footer .social {
