@@ -418,10 +418,13 @@ footer .btn-outline-secondary a{
 .nav-item a {
   font-weight: 500 !important
 }
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
+.navbar-light .navbar-nav, .navbar-light .navbar-nav .show>.nav-link{
   font-weight: 500 !important;
   color: #101828;
 
+}
+.nav-link.active{
+  font-weight: 600 !important;
 }
 
 .bg-light {
@@ -771,6 +774,7 @@ footer .social {
 --------------------------------------------------------------*/
 
 .swiper-slide{
+
 }
 
 .testimonials .testimonial-wrap {
@@ -785,6 +789,7 @@ footer .social {
 .testimonials .testimonial-item p{
   color: #FFFFFF;
   font-style: italic;
+  text-align: center;
   font-size: 2.25rem;
   line-height: 2.75rem;
   padding: 0 0 2rem 0;
@@ -849,8 +854,8 @@ footer .social {
 }
 
 .testimonials .swiper-pagination {
-  margin-top: 20px;
-  /* position: relative; */
+  margin-top: 96px;
+  position: relative;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet {
