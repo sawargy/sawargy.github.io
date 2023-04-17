@@ -193,8 +193,13 @@ section {
 .clients p {
 }
 
+.clients img {
+  filter: grayscale(1);
+  transition: filter .3s ease-in-out;
+}
+
 .clients img:hover {
-  filter: grayscale(0%);
+  filter: grayscale(0);
 }
 
 footer{
